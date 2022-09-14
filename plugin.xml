@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin id="io.dundermifflin.testplugin" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+	<name>
+		DunderMifflinPlugin
+	</name>
+	<js-module name="DunderMifflinPlugin" src="www/DunderMifflinPlugin.js">
+		<clobbers target="cordova.plugins.DunderMifflinPlugin" />
+	</js-module>
+	<platform name="android">
+		<config-file parent="/*" target="res/xml/config.xml">
+			<feature name="DunderMifflinPlugin">
+				<param name="android-package" value="io.dundermifflin.testplugin.DunderMifflinPlugin" />
+			</feature>
+		</config-file>
+		<config-file parent="/*" target="AndroidManifest.xml">
+		</config-file>
+		<source-file src="src/android/DunderMifflinPlugin.java" target-dir="src/io/dundermifflin/testplugin/DunderMifflinPlugin" />
+	</platform>
+</plugin>

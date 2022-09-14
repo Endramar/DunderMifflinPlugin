@@ -1,0 +1,17 @@
+{
+  "name": "io.dundermifflin.testplugin",
+  "version": "0.0.1",
+  "description": "",
+  "cordova": {
+    "id": "io.dundermifflin.testplugin",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "",
+  "license": "ISC"
+}
